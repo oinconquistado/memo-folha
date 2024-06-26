@@ -1,10 +1,11 @@
-import './MainLayout.css';
 
 function MainLayout() {
   return (
-    <div>
-      <p className={"text"}>Main Layout</p>
-    </div>
+      <div>
+        <h1 className="text-3xl font-bold text-red-500 underline">
+          Hello world!
+        </h1>
+      </div>
   );
 }
 

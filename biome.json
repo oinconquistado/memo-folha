@@ -1,0 +1,40 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.1.2/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"a11y": {
+				"noSvgWithoutTitle": "off"
+			},
+			"recommended": true,
+			"complexity": {
+				"noForEach": "off"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "off",
+				"noMisleadingCharacterClass": "off"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "off"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"indentStyle": "space",
+			"quoteStyle": "single",
+			"jsxQuoteStyle": "single",
+			"semicolons": "always"
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"indentWidth": 2,
+		"indentStyle": "space",
+		"lineWidth": 80,
+		"ignore": ["tailwind.css", "tailwind.config.js", "postcss.config.js"]
+	}
+}

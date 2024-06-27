@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import SVGIcon from '@/components/SVGWrapper/index';
+import SVGIcon from '@/components/UI/SVGWrapper/index.tsx';
 import User from '@/assets/user.svg';
 
 describe('SVGWrapper component', () => {

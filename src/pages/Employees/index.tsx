@@ -37,7 +37,7 @@ export default function Employees() {
   ];
 
   return (
-    <div className='flex flex-wrap gap-4 bg-white p-6 rounded-lg'>
+    <div className='flex flex-wrap gap-4 p-6 rounded-lg'>
       {collaborators.map((collaborator) => (
         <Card key={collaborator.id} collaborator={collaborator} />
       ))}

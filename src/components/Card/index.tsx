@@ -1,4 +1,4 @@
-import SVGWrapper from 'components/SVGWrapper';
+import SVGWrapper from 'components/UI/SVGWrapper';
 import User from '@/assets/user.svg';
 
 interface Position {

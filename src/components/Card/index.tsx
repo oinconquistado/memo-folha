@@ -1,6 +1,6 @@
 import SVGWrapper from 'components/UI/SVGWrapper';
 import User from '@/assets/user.svg';
-import type {Collaborator} from "@/types/APIContextTypes.ts"
+import type { Collaborator } from '@/types/APIContextTypes.ts';
 
 const Card = ({ collaborator }: { collaborator: Collaborator }) => {
   return (
@@ -17,7 +17,7 @@ const Card = ({ collaborator }: { collaborator: Collaborator }) => {
               <SVGWrapper
                 width={24}
                 height={24}
-                className={`${collaborator.position.description === 'Subordinado' ? 'fill-morning-glory-600' : 'fill-sail-600'}`}
+                className={`${collaborator.position.description === 'Subordinado' ? 'fill-jade-500' : 'fill-sail-500'}`}
               >
                 <User />
               </SVGWrapper>

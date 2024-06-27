@@ -1,18 +1,6 @@
 import SVGWrapper from 'components/UI/SVGWrapper';
 import User from '@/assets/user.svg';
-
-interface Position {
-  description: string;
-}
-
-interface Collaborator {
-  id: number;
-  name: string;
-  position: Position;
-  hireDate: string;
-  monetaryValue: string;
-  CPF: string;
-}
+import type {Collaborator} from "@/types/APIContextTypes.ts"
 
 const Card = ({ collaborator }: { collaborator: Collaborator }) => {
   return (

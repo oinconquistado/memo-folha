@@ -1,3 +1,5 @@
+import SVGIcon from '@/components/SVGIcon';
+import User from '@/assets/user.svg';
 
 interface Position {
   description: string;
@@ -20,9 +22,17 @@ const Card = ({ collaborator }: { collaborator: Collaborator }) => {
     >
       <div className='bg-white flex h-16 items-center justify-between px-4 rounded-t-xl w-full'>
         <div className='flex gap-3 items-center'>
-          <div className='bg-morning-glory-100 grid h-8 place-items-center rounded-full w-8'>
-            <div className='grid h-6 place-items-center text-morning-glory-500 w-6'>
-              <p>icon</p>
+          <div
+            className={`grid h-8 place-items-center rounded-full w-8 ${collaborator.position.description === 'Subordinado' ? 'bg-jade-100' : 'bg-sail-100'}`}
+          >
+            <div className='grid h-6 place-items-center w-6'>
+              <SVGIcon
+                width={24}
+                height={24}
+                className={`${collaborator.position.description === 'Subordinado' ? 'fill-morning-glory-600' : 'fill-sail-600'}`}
+              >
+                <User />
+              </SVGIcon>
             </div>
           </div>
           <p className='font-bold h-7 text-lg text-gray-700'>

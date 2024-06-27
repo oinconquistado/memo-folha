@@ -1,0 +1,28 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin {
+    animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.delay-50 {
+    animation-delay: -0.45s;
+}
+
+.delay-75 {
+    animation-delay: -0.3s;
+}
+
+.delay-100 {
+    animation-delay: -0.15s;
+}
+
+.delay-150 {
+    animation-delay: 0s;
+}

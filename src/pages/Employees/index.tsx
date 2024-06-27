@@ -1,11 +1,12 @@
 import Card from '@/components/Card';
 import { useAPIContext } from '@/context/APIContext';
+import Spinner from '@/pages/utils/Spinner';
 
 export default function Employees() {
   const { collaborators } = useAPIContext();
 
   if (!collaborators) {
-    return <>Carregando...</>;
+    return <Spinner color={"text-morning-glory-500"} />;
   }
 
   return (

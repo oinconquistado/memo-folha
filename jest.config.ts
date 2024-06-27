@@ -3,7 +3,9 @@ import type { Config } from 'jest';
 export default async (): Promise<Config> => {
     return {
         "moduleNameMapper":{
-            "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+            "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+            '\\.svg$': '<rootDir>/__mocks__/svg.ts',
+            '^@/(.*)$': '<rootDir>/src/$1',
         },
         // verbose: true,
         // roots: ['<rootDir>/src'], // , '<rootDir>/test'],

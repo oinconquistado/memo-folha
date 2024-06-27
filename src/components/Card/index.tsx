@@ -5,7 +5,7 @@ import type {Collaborator} from "@/types/APIContextTypes.ts"
 const Card = ({ collaborator }: { collaborator: Collaborator }) => {
   return (
     <div
-      className='flex flex-col items-center max-w-96 min-w-96 h-60 rounded-xl shadow-lg'
+      className='flex flex-col items-center max-w-96 h-60 min-w-min-80 rounded-xl shadow w-11/12'
       id={collaborator.id.toString()}
     >
       <div className='bg-white flex h-16 items-center justify-between px-4 rounded-t-xl w-full'>

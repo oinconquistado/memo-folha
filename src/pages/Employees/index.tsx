@@ -12,7 +12,7 @@ export default function Employees() {
 
   return (
     <section className='flex justify-center'>
-      <div className='gap-y-8 grid justify-items-center overflow-hidden p-4 responsive-card-container w-full'>
+      <div className='gap-y-8 grid justify-items-center overflow-x-hidden py-4 h-full responsive-card-container w-full'>
         {collaborators?.map((collaborator) => (
           <Card key={collaborator.id} collaborator={collaborator} />
         ))}
